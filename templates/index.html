@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤 AI Weather Chatbot</h1>
+        <p>Enter a city.</p>
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button onclick="fetchWeather()">Get Weather</button>
+        
+        <div id="weather-result">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="">
+            <p id="weather-description"></p>
+            <p id="weather-temp"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
